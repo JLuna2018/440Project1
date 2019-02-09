@@ -48,7 +48,7 @@ fulton.png
 .dropdown 
 {
   position: relative;
-  width: 10%;
+  width: 100%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -61,7 +61,7 @@ fulton.png
   min-width: 160px;
   border-radius: 12px;
   top: 100%;  
-  left: 0;
+  left: 400px;
   list-style: none;
   width: 20px;
 }
@@ -84,7 +84,7 @@ fulton.png
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content 
 {
-	display: block;
+	display: inline-block;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
