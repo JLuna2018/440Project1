@@ -70,6 +70,7 @@ fulton.png
   min-width: 160px;
   border-radius: 12px;
   z-index: 1;
+  left: -40px;
 }
 
 /* Links inside the dropdown */
