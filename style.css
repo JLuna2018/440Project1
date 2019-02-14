@@ -32,6 +32,11 @@ fulton.png
 	height: 300px;
 }
 
+.inputArea
+{
+  text-align: center;
+}
+
 
 /* Dropdown Button */
 .dropbtn {
@@ -79,6 +84,11 @@ fulton.png
 .dropdown-content a:hover 
 {
 	background-color: #ddd;
+}
+
+.dropdown-content a.exit:hover
+{
+  background-color: #FF0000;
 }
 
 /* Show the dropdown menu on hover */
