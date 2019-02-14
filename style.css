@@ -26,10 +26,16 @@ footer
 	color: white;
 }
 
-fulton.png
+.png
 {
-	width: 300px;
-	height: 300px;
+	width: 730px;
+	height: 380px;
+}
+
+.jpg
+{
+  width: 730px;
+  height: 380px;
 }
 
 .inputArea
