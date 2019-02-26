@@ -94,3 +94,28 @@ footer {
 .dropdown:hover .dropbtn {
 	background-color: lightgray;
 }
+
+html, body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	font-family: 'Century Gothic';
+}
+
+body {
+	height: 100%;
+}
+
+button {
+	border: 1px solid gray;
+	border-radius: 25px;
+	background-color: #008cff;
+	color: white;
+}
+
+.parkingLotBox {
+	display: inline-block;
+}

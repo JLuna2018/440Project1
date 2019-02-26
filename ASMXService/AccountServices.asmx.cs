@@ -41,7 +41,7 @@ namespace ASMXService
 
         //EXAMPLE OF A SIMPLE SELECT QUERY (PARAMETERS PASSED IN FROM CLIENT)
         [WebMethod(EnableSession = true)] //NOTICE: gotta enable session on each individual method
-        public bool LogOn(string email)
+        public bool LogOn(string eMail)
         {
             //we return this flag to tell them if they logged in or not
             bool success = false;
@@ -60,7 +60,7 @@ namespace ASMXService
             //tell our command to replace the @parameters with real values
             //we decode them because they came to us via the web so they were encoded
             //for transmission (funky characters escaped, mostly)
-            sqlCommand.Parameters.AddWithValue("@emailValue", HttpUtility.UrlDecode(email));
+            sqlCommand.Parameters.AddWithValue("@emailValue", HttpUtility.UrlDecode(eMail));
 
             //a data adapter acts like a bridge between our command object and 
             //the data we are trying to get back and put in a table object
