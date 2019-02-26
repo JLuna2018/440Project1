@@ -23,11 +23,17 @@
 			}
 		}
 
+
+
 		//this function clears data from all panels
 		function clearData() {
 			$("#parkingLotsBox").empty();
 			clearLogon();
 		}
+
+
+
+
 
 		function LogOn(eMail) {
 			//the url of the webservice we will be talking to
@@ -60,7 +66,7 @@
 					//but honestly I don't know...)
 					if (msg.d) {
 						//server replied true, so show the accounts panel
-						alert("here");
+						alert("Login successful! Welcome.");
 						showPanel('parkingLotsPanel');
 						LoadParkingLots();
 					}
@@ -80,8 +86,15 @@
 				}
 			});
 
+
+
+
 			var parkingLotsArray;
 			//this function grabs accounts and loads our account window
+
+
+
+
 
 			function LoadParkingLots() {
 				var webMethod = "AccountServices.asmx/GetParkingLots";
@@ -137,7 +150,7 @@
 						//if the account window is showing or not
 					},
 					error: function (e) {
-						alert("boo...");
+						alert("Parking Lots didn't load...");
 					}
 				});
 			}
@@ -155,6 +168,11 @@
 
 
 </head>
+
+
+
+
+
 
 <body>
 	<div class="contentContainer">
@@ -187,12 +205,39 @@
 	</div>
 
 	<div id="parkingLotsPanel" class="contentPanel" style="visibility:hidden;">
-		<div class="left">Parking Lots</div>
-		<div class="left" style="font-size:smaller">click a parking lot structure to view status</div>
+		<!--<div class="left">Parking Lots</div>
+		<div class="left">Select a parking lot structure from the dropdown to view its status.</div>-->
 		
-		<hr />
-		Apache
+		<!--<hr />-->
+		
 		<div class="parkingLotsBox" id="parkingLotsBox">
+
+
+                <header id="header">
+                    <div class="header-main">
+                        <h1>
+                            ASU Parking App
+                        </h1>
+                        <div class="dropdown">
+                            <button class="dropbtn">Garages</button>
+                            <div class="dropdown-content">
+                                <a href="apache.html">Apache</a>
+                                <a href="rural.html">Rural</a>
+                                <a href="fulton.html">Fulton</a>
+                                <a class="exit" href="logon.html">Logout</a>
+                            </div>
+                        </div>
+			            <br><br>
+            			<div class="header-image">
+			            	<img src="fork.png" alt="ASU logo">
+			            </div>	
+                    </div>
+                </header>
+
+                <footer id="footer">
+                    Copyright &copy; 2019 Team Nala
+                </footer>
+
 
 		</div>
 	</div>
